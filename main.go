@@ -17,14 +17,24 @@ func main () {
 
 	go func() { <-sigs; done <- true} ()
 
+	isBreak := false
 	mainLoop: for {
-		select {
-		case <- time.After(10 * time.Second):
-			fmt.Println("You are still on break")
-		case <- done:
-		break mainLoop
+		if isBreak {
+			select {
+			case <- time.After(10 * time.Second):
+				fmt.Println("Break is over, you can continue!")
+			case <- done:
+			break mainLoop
+			}
+			isBreak = false
+		} else {
+			select {
+			case <- time.After(50 * time.Second):
+				fmt.Println("Starting mandatory break.")
+			case <- done:
+			break mainLoop
+			}
+		isBreak = true
 		}
 	}
-	fmt.Println()
-	fmt.Println("Break is over, you can continue! Happy coding!")
 }
