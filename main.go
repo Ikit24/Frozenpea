@@ -34,7 +34,7 @@ func main () {
 				isBreak = false
 			} else {
 				select {
-				case <- time.After(50 * time.Second):
+				case <- time.After(20 * time.Second):
 					fmt.Println("Starting mandatory break.")
 					fmt.Println("About to show window")
 					showBreakWindow(a)
@@ -50,13 +50,17 @@ func main () {
 }
 
 func showBreakWindow(a fyne.App) {
-	w := a.NewWindow("Break time!")
+	fyne.DoAndWait(func() {
+		w := a.NewWindow("Break time!")
 
-	w.SetContent(widget.NewLabel("Take a break!"))
-	w.SetFullScreen(true)
-	w.Show()
+		w.SetContent(widget.NewLabel("Take a break!"))
+		w.SetFullScreen(true)
+		w.Show()
 
-	time.AfterFunc(10 * time.Second, func() {
-		w.Close()
+		time.AfterFunc(10 * time.Second, func() {
+			fyne.Do(func() {
+			w.Close()
+			})
+		})
 	})
 }
