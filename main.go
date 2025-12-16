@@ -9,8 +9,9 @@ import (
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
 	"fyne.io/fyne/v2/widget"
+	"fyne.io/fyne/v2/driver"
 
-	"github.com/BurntSushi/xgb"
+	//"github.com/BurntSushi/xgb"
 )
 
 func main () {
@@ -63,6 +64,13 @@ func showBreakWindow(a fyne.App) fyne.Window {
 
 		})
 		w.Show()
+		if nativeWin, ok := w.(driver.NativeWindow); ok {
+			nativeWin.RunNative(func(ctx any) {
+				if x11, ok := ctx.(*driver.X11WindowContext); ok {
+					fmt.Printf("Window ID: %d\n", x11.WindowHandle)
+				}
+			})
+		}
 	})
 	return w
 }
