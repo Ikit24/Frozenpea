@@ -11,7 +11,8 @@ import (
 	"fyne.io/fyne/v2/widget"
 	"fyne.io/fyne/v2/driver"
 
-	//"github.com/BurntSushi/xgb"
+	"github.com/BurntSushi/xgb"
+	"github.com/BurntSushi/xgb/xproto"
 )
 
 func main () {
@@ -54,6 +55,8 @@ func main () {
 	a.Run()
 }
 
+
+
 func showBreakWindow(a fyne.App) fyne.Window {
 	var w fyne.Window
 	fyne.DoAndWait(func() {
@@ -66,8 +69,18 @@ func showBreakWindow(a fyne.App) fyne.Window {
 		w.Show()
 		if nativeWin, ok := w.(driver.NativeWindow); ok {
 			nativeWin.RunNative(func(ctx any) {
-				if x11, ok := ctx.(*driver.X11WindowContext); ok {
-					fmt.Printf("Window ID: %d\n", x11.WindowHandle)
+				if x11ctx, ok := ctx.(*driver.X11WindowContext); ok {
+					conn, _ := xgb.NewConn()
+					cookie := xproto.GrabKeyboard(conn, false, xproto.Window(x11ctx.WindowHandle), 0, xproto.GrabModeAsync, xproto.GrabModeAsync)
+					reply, err := cookie.Reply()
+					if err != nil {
+						fmt.Println("Cannot grab keyboard:", err)
+						return
+					}
+					fmt.Println("Grab status:", reply.Status)
+					if reply.Status != xproto.GrabStatusSuccess {
+						fmt.Println("Grab failed, status:", reply.Status)
+					}
 				}
 			})
 		}
