@@ -27,6 +27,7 @@ func main () {
 
 	isBreak := false
 	go func () {
+		time.Sleep(1 * time.Second)
 		var w fyne.Window
 		mainLoop: for {
 			if isBreak {
@@ -67,10 +68,20 @@ func showBreakWindow(a fyne.App) fyne.Window {
 
 		})
 		w.Show()
+		fmt.Println("Window shwon, attempting native access...")
 		if nativeWin, ok := w.(driver.NativeWindow); ok {
+			fmt.Println("Got natinve window interface")
 			nativeWin.RunNative(func(ctx any) {
+				fmt.Println("Inside RunNAtive callback")
 				if x11ctx, ok := ctx.(*driver.X11WindowContext); ok {
-					conn, _ := xgb.NewConn()
+					fmt.Println("Got X11 context, window:", x11ctx.WindowHandle)
+					conn, err := xgb.NewConn()
+					if err != nil {
+						fmt.Println("Connection failed:", err)
+						return
+					}
+					fmt.Println("Created X11 connection")
+
 					cookie := xproto.GrabKeyboard(conn, false, xproto.Window(x11ctx.WindowHandle), 0, xproto.GrabModeAsync, xproto.GrabModeAsync)
 					reply, err := cookie.Reply()
 					if err != nil {
@@ -83,6 +94,8 @@ func showBreakWindow(a fyne.App) fyne.Window {
 					}
 				}
 			})
+		} else {
+			fmt.Println("NOT a native window!")
 		}
 	})
 	return w
