@@ -56,8 +56,6 @@ func main () {
 	a.Run()
 }
 
-
-
 func showBreakWindow(a fyne.App) fyne.Window {
 	var w fyne.Window
 	fyne.DoAndWait(func() {
@@ -68,12 +66,13 @@ func showBreakWindow(a fyne.App) fyne.Window {
 
 		})
 		w.Show()
-		fmt.Println("Window shwon, attempting native access...")
+		fmt.Println("Window shown, attempting native access...")
 		if nativeWin, ok := w.(driver.NativeWindow); ok {
 			fmt.Println("Got natinve window interface")
 			nativeWin.RunNative(func(ctx any) {
 				fmt.Println("Inside RunNAtive callback")
-				if x11ctx, ok := ctx.(*driver.X11WindowContext); ok {
+
+				if x11ctx, ok := ctx.(driver.X11WindowContext); ok {
 					fmt.Println("Got X11 context, window:", x11ctx.WindowHandle)
 					conn, err := xgb.NewConn()
 					if err != nil {
