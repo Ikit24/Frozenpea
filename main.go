@@ -53,6 +53,9 @@ func main () {
 			}
 		}
 	} ()
+	dummy := a.NewWindow("")
+	dummy.Resize(fyne.NewSize(1, 1))
+	dummy.Hide()
 	a.Run()
 }
 
