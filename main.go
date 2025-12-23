@@ -32,7 +32,7 @@ func main () {
 		mainLoop: for {
 			if isBreak {
 				select {
-				case <- time.After(10 * time.Second):
+				case <- time.After(10 * time.Minute):
 					fmt.Println("Break is over, you can continue!")
 					fyne.Do(func() {
 					w.Close()
@@ -43,7 +43,7 @@ func main () {
 				isBreak = false
 			} else {
 				select {
-				case <- time.After(20 * time.Second):
+				case <- time.After(50 * time.Minute):
 					fmt.Println("Starting mandatory break.")
 					w = showBreakWindow(a)
 				case <- done:
