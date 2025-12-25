@@ -8,8 +8,8 @@ import (
 	"syscall"
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
-	"fyne.io/fyne/v2/widget"
 	"fyne.io/fyne/v2/driver"
+	"fyne.io/fyne/v2/canvas"
 
 	"github.com/BurntSushi/xgb"
 	"github.com/BurntSushi/xgb/xproto"
@@ -32,7 +32,7 @@ func main () {
 		mainLoop: for {
 			if isBreak {
 				select {
-				case <- time.After(10 * time.Minute):
+				case <- time.After(10 * time.Second):
 					fmt.Println("Break is over, you can continue!")
 					fyne.Do(func() {
 					w.Close()
@@ -43,7 +43,7 @@ func main () {
 				isBreak = false
 			} else {
 				select {
-				case <- time.After(50 * time.Minute):
+				case <- time.After(50 * time.Second):
 					fmt.Println("Starting mandatory break.")
 					w = showBreakWindow(a)
 				case <- done:
@@ -63,11 +63,15 @@ func showBreakWindow(a fyne.App) fyne.Window {
 	var w fyne.Window
 	fyne.DoAndWait(func() {
 		w = a.NewWindow("Break time!")
-		w.SetContent(widget.NewLabel("Take a break!"))
+
+		img := canvas.NewImageFromFile("./peakpx.jpg")
+		img.FillMode = canvas.ImageFillStretch
+		w.SetContent(img)
 		w.SetFullScreen(true)
 		w.SetCloseIntercept(func() {
 		})
 		w.Show()
+
 		if nativeWin, ok := w.(driver.NativeWindow); ok {
 			nativeWin.RunNative(func(ctx any) {
 				if x11ctx, ok := ctx.(driver.X11WindowContext); ok {
@@ -84,7 +88,6 @@ func showBreakWindow(a fyne.App) fyne.Window {
 						fmt.Println("Cannot grab keyboard:", err)
 						return
 					}
-					fmt.Println("Grab status:", reply.Status)
 					if reply.Status != xproto.GrabStatusSuccess {
 						fmt.Println("Grab failed, status:", reply.Status)
 					}
