@@ -1,7 +1,7 @@
 # Frozendpea
 
-A productivity app which locks the user out for after a set of minutes to
-prevent RSI related problems and support health.
+A productivity app which locks the user out from the machine after a set of minutes to
+prevent RSI related problems and support healthier work.
 
 ## Prerequisites
 
