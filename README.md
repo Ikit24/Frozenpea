@@ -8,3 +8,9 @@ prevent RSI related problems and support healthier work.
 - Go 1.21+ installed: https://go.dev/dl/
 - Go get fyne.io/fyne/v2
 - Go get github.com/BurntSushi/xgb
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Ikit24/Frozenpea.git
+   cd your-repo-name
+   ```
