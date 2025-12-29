@@ -14,3 +14,6 @@ prevent RSI related problems and support healthier work.
    git clone https://github.com/Ikit24/Frozenpea.git
    cd your-repo-name
    ```
+2. **Run the application:
+
+go run .
