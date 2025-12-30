@@ -15,5 +15,6 @@ prevent RSI related problems and support healthier work.
    cd your-repo-name
    ```
 2. **Run the application:
-
-go run .
+   ```bash
+   go run .
+   ```
