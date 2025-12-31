@@ -18,3 +18,7 @@ prevent RSI related problems and support healthier work.
    ```bash
    go run .
    ```
+## Usage
+
+Once the application is running, you will be greeted with a background picture window when
+it is time to take a rest (after 50 minutes by default)
