@@ -22,3 +22,7 @@ prevent RSI related problems and support healthier work.
 
 Once the application is running, you will be greeted with a background picture window when
 it is time to take a rest (after 50 minutes by default)
+
+## To add
+Startup notification
+GUI for user customization
