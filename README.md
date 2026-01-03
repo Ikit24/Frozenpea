@@ -53,7 +53,7 @@ chmod +x main
 
 ### 2. Create Startup Script
 ```bash
-nano ~/startup.sh
+nvim ~/startup.sh
 ```
 
 Add the following content (replace `ati` with your username):
