@@ -42,15 +42,25 @@ func main () {
 				}
 				isBreak = false
 			} else {
+				var n fyne.Window
 				select {
-				case <- time.After(50 * time.Minute):
+				case <- time.After(49 * time.Minute):
+					fmt.Println("Mandatory break starts in 1 minute! Make sure you save your work.")
+					n = showNotification(a)
+				case <- done:
+					break mainLoop
+				}
+				select {
+				case <- time.After(1 * time.Minute):
 					fmt.Println("Starting mandatory break.")
+					fyne.Do(func() { n.Close() })
 					w = showBreakWindow(a)
 				case <- done:
-				break mainLoop
+					break mainLoop
 				}
-			isBreak = true
 			}
+
+			isBreak = true
 		}
 	} ()
 	dummy := a.NewWindow("")
@@ -98,4 +108,17 @@ func showBreakWindow(a fyne.App) fyne.Window {
 		}
 	})
 	return w
+}
+
+func showNotification(a fyne.App) fyne.Window {
+	var n fyne.Window
+	fyne.DoAndWait(func() {
+		n = a.NewWindow("Break in 1 minute!")
+		n.SetContent(widget.NewLabel("Break starts in 1 minute! Save your work."))
+		n.Resize(fyne.NewSize(400, 100))
+		n.SetCloseIntercept(func() {
+		})
+		n.Show()
+	})
+	return n
 }
