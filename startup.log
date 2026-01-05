@@ -86,3 +86,32 @@ fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0002743f0?, {0x0?, 0x2?})
 	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
 main.main()
 	/home/ati/projects/code/FrozenPea/main.go:56 +0x1bc
+Session is running.
+2026/01/05 09:57:22 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc0001200c0?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc0002b3d00?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc000220000, {0x0?, 0x6e40cc?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0003adcb0)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc000220000, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0000d21c0?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:56 +0x1bc

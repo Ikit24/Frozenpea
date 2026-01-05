@@ -10,6 +10,8 @@ import (
 	"fyne.io/fyne/v2/app"
 	"fyne.io/fyne/v2/driver"
 	"fyne.io/fyne/v2/canvas"
+	"fyne.io/fyne/v2/widget"
+	"fyne.io/fyne/v2/container"
 
 	"github.com/BurntSushi/xgb"
 	"github.com/BurntSushi/xgb/xproto"
@@ -32,7 +34,7 @@ func main () {
 		mainLoop: for {
 			if isBreak {
 				select {
-				case <- time.After(10 * time.Minute):
+				case <- time.After(10 * time.Second):
 					fmt.Println("Break is over, you can continue!")
 					fyne.Do(func() {
 					w.Close()
@@ -44,14 +46,14 @@ func main () {
 			} else {
 				var n fyne.Window
 				select {
-				case <- time.After(49 * time.Minute):
+				case <- time.After(29 * time.Second):
 					fmt.Println("Mandatory break starts in 1 minute! Make sure you save your work.")
 					n = showNotification(a)
 				case <- done:
 					break mainLoop
 				}
 				select {
-				case <- time.After(1 * time.Minute):
+				case <- time.After(10 * time.Second):
 					fmt.Println("Starting mandatory break.")
 					fyne.Do(func() { n.Close() })
 					w = showBreakWindow(a)
@@ -114,8 +116,13 @@ func showNotification(a fyne.App) fyne.Window {
 	var n fyne.Window
 	fyne.DoAndWait(func() {
 		n = a.NewWindow("Break in 1 minute!")
-		n.SetContent(widget.NewLabel("Break starts in 1 minute! Save your work."))
-		n.Resize(fyne.NewSize(400, 100))
+		img := canvas.NewImageFromFile("./notify.jpg")
+		img.FillMode = canvas.ImageFillStretch
+		label := widget.NewLabel("Break starts in 1 minute! Save your work.")
+		content := container.NewStack(img, label)
+		n.SetContent(content)
+		n.Resize(fyne.NewSize(1265, 650))
+		n.SetFixedSize(true)
 		n.SetCloseIntercept(func() {
 		})
 		n.Show()
