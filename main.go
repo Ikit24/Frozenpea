@@ -6,6 +6,7 @@ import (
 	"os"
 	"os/signal"
 	"syscall"
+	"image/color"
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
 	"fyne.io/fyne/v2/driver"
@@ -34,7 +35,7 @@ func main () {
 		mainLoop: for {
 			if isBreak {
 				select {
-				case <- time.After(10 * time.Second):
+				case <- time.After(10 * time.Minute):
 					fmt.Println("Break is over, you can continue!")
 					fyne.Do(func() {
 					w.Close()
@@ -46,14 +47,14 @@ func main () {
 			} else {
 				var n fyne.Window
 				select {
-				case <- time.After(29 * time.Second):
+				case <- time.After(49 * time.Minute):
 					fmt.Println("Mandatory break starts in 1 minute! Make sure you save your work.")
 					n = showNotification(a)
 				case <- done:
 					break mainLoop
 				}
 				select {
-				case <- time.After(10 * time.Second):
+				case <- time.After(10 * time.Minute):
 					fmt.Println("Starting mandatory break.")
 					fyne.Do(func() { n.Close() })
 					w = showBreakWindow(a)
@@ -118,8 +119,19 @@ func showNotification(a fyne.App) fyne.Window {
 		n = a.NewWindow("Break in 1 minute!")
 		img := canvas.NewImageFromFile("./notify.jpg")
 		img.FillMode = canvas.ImageFillStretch
-		label := widget.NewLabel("Break starts in 1 minute! Save your work.")
-		content := container.NewStack(img, label)
+
+		topText := canvas.NewText("Break starts in 1 minute! Save your work.", color.NRGBA{R: 255, G: 0, B: 0, A: 255})
+		topText.Alignment = fyne.TextAlignCenter
+		topText.TextSize = 24
+		topText.TextStyle = fyne.TextStyle{Bold: true}
+
+		textContainer := container.NewVBox(
+			topText,
+			widget.NewLabel(""),
+		)
+		
+		content := container.NewStack(img, container.NewBorder(textContainer, nil, nil, nil))
+
 		n.SetContent(content)
 		n.Resize(fyne.NewSize(1265, 650))
 		n.SetFixedSize(true)
