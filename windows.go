@@ -2,9 +2,7 @@ package main
 
 import (
 	"fmt"
-	"image/color"
 	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/driver"
 	"fyne.io/fyne/v2/canvas"
 	"fyne.io/fyne/v2/widget"
 	"fyne.io/fyne/v2/container"
@@ -81,4 +79,25 @@ func showNotification(a fyne.App) fyne.Window {
 		n.Show()
 	})
 	return n
+}
+
+func startupWindow(a fyne.App) fyne.Window {
+	var start fyne.Window
+	fyne.DoAndWait(func() {
+		start = a.NewWindow("Setup")
+		workDur := widget.NewFormItem("Session duration", widget.NewEntry())
+		breakDur := widget.NewFormItem("Break duration", widget.NewEntry())
+
+		form := widget.NewForm(workDur, breakDur)
+		
+		confirmButton := widget.NewButton("Confirm changes", func() {
+			fyne.CurrentApp().Close()
+		})
+	})
+
+	content := container.NewVBox(form, confirmButton)
+
+	start.SetContent(content)
+	
+	return start
 }
