@@ -46,7 +46,7 @@ func main () {
 					break mainLoop
 				}
 				select {
-				case <- time.After(10 * time.Minute):
+				case <- time.After(1 * time.Minute):
 					fmt.Println("Starting mandatory break.")
 					fyne.Do(func() { n.Close() })
 					w = showBreakWindow(a)
