@@ -73,3 +73,21 @@ created by github.com/BurntSushi/xgb.postNewConn in goroutine 1
 ./windows.go:94:22: fyne.CurrentApp().Close undefined (type fyne.App has no field or method Close)
 ./windows.go:98:31: undefined: form
 ./windows.go:98:37: undefined: confirmButton
+# github.com/Ikit24/frozenpea
+./windows.go:27:26: undefined: driver
+./windows.go:29:27: undefined: driver
+./windows.go:62:74: undefined: color
+./windows.go:91:3: declared and not used: form
+./windows.go:93:3: declared and not used: confirmButton
+./windows.go:94:22: fyne.CurrentApp().Close undefined (type fyne.App has no field or method Close)
+./windows.go:98:31: undefined: form
+./windows.go:98:37: undefined: confirmButton
+# github.com/Ikit24/frozenpea
+./windows.go:27:26: undefined: driver
+./windows.go:29:27: undefined: driver
+./windows.go:62:74: undefined: color
+./windows.go:91:3: declared and not used: form
+./windows.go:93:3: declared and not used: confirmButton
+./windows.go:94:22: fyne.CurrentApp().Close undefined (type fyne.App has no field or method Close)
+./windows.go:98:31: undefined: form
+./windows.go:98:37: undefined: confirmButton

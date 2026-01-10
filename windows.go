@@ -11,6 +11,13 @@ import (
 	"github.com/BurntSushi/xgb/xproto"
 )
 
+type Config struct {
+	WorkDuration  string
+	BreakDuration string
+}
+
+var appConfig Config
+
 func showBreakWindow(a fyne.App) fyne.Window {
 	var w fyne.Window
 	fyne.DoAndWait(func() {
@@ -81,23 +88,27 @@ func showNotification(a fyne.App) fyne.Window {
 	return n
 }
 
-func startupWindow(a fyne.App) fyne.Window {
+func startupWindow(a fyne.App) {
 	var start fyne.Window
+	var workValue, breakValue string
+	
 	fyne.DoAndWait(func() {
 		start = a.NewWindow("Setup")
-		workDur := widget.NewFormItem("Session duration", widget.NewEntry())
-		breakDur := widget.NewFormItem("Break duration", widget.NewEntry())
+		workEntry := widget.NewEntry()
+		breakEntry := widget.NewEntry()
+		workDur := widget.NewFormItem("Session duration", workEntry)
+		breakDur := widget.NewFormItem("Break duration", breakEntry)
 
 		form := widget.NewForm(workDur, breakDur)
 		
 		confirmButton := widget.NewButton("Confirm changes", func() {
-			fyne.CurrentApp().Close()
+			appConfig.WorkDurtaion = workEntry.Text
+			appConfig.BreakDurtaion = breakEntry.Text
+			start.Close()
 		})
+		content := container.NewVBox(form, confirmButton)
+		start.SetContent(content)
+		start.Show()
 	})
-
-	content := container.NewVBox(form, confirmButton)
-
-	start.SetContent(content)
-	
 	return start
 }
