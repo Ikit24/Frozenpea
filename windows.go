@@ -2,21 +2,16 @@ package main
 
 import (
 	"fmt"
+	"image/color"
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/canvas"
 	"fyne.io/fyne/v2/widget"
+	"fyne.io/fyne/v2/driver"
 	"fyne.io/fyne/v2/container"
 
 	"github.com/BurntSushi/xgb"
 	"github.com/BurntSushi/xgb/xproto"
 )
-
-type Config struct {
-	WorkDuration  string
-	BreakDuration string
-}
-
-var appConfig Config
 
 func showBreakWindow(a fyne.App) fyne.Window {
 	var w fyne.Window
@@ -88,11 +83,10 @@ func showNotification(a fyne.App) fyne.Window {
 	return n
 }
 
-func startupWindow(a fyne.App) {
+func startupWindow(a fyne.App, setupDone chan bool) {
 	var start fyne.Window
-	var workValue, breakValue string
 	
-	fyne.DoAndWait(func() {
+	fyne.DoAndWait(func () {
 		start = a.NewWindow("Setup")
 		workEntry := widget.NewEntry()
 		breakEntry := widget.NewEntry()
@@ -102,13 +96,14 @@ func startupWindow(a fyne.App) {
 		form := widget.NewForm(workDur, breakDur)
 		
 		confirmButton := widget.NewButton("Confirm changes", func() {
-			appConfig.WorkDurtaion = workEntry.Text
-			appConfig.BreakDurtaion = breakEntry.Text
+			appConfig.WorkDuration = workEntry.Text
+			appConfig.BreakDuration = breakEntry.Text
+			setupDone <- true
 			start.Close()
 		})
-		content := container.NewVBox(form, confirmButton)
-		start.SetContent(content)
-		start.Show()
+
+			content := container.NewVBox(form, confirmButton)
+			start.SetContent(content)
+			start.Show()
 	})
-	return start
 }
