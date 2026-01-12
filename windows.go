@@ -104,6 +104,8 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 
 			content := container.NewVBox(form, confirmButton)
 			start.SetContent(content)
+			start.Resize(fyne.NewSize(1265, 650))
+			start.SetFixedSize(true)
 			start.Show()
 	})
 }
