@@ -102,9 +102,14 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 			start.Close()
 		})
 
+			img := canvas.NewImageFormFile("./fpea.jpg")
+			img.FillMode = canvas.ImageFillStretch
+
+			formContent := container.NewVBox(form, confirmButton)
 			content := container.NewVBox(form, confirmButton)
+
 			start.SetContent(content)
-			start.Resize(fyne.NewSize(1265, 650))
+			start.Resize(fyne.NewSize(1000, 650))
 			start.SetFixedSize(true)
 			start.Show()
 	})
