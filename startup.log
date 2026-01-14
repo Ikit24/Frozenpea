@@ -252,3 +252,28 @@ main.main()
 	/home/ati/projects/code/FrozenPea/main.go:78 +0x148
 exit status 2
 Session is running.
+Mandatory break starts in 1 minute! Make sure you save your work.
+Starting mandatory break.
+Got X11 context, window: 39845930
+Break is over, you can continue!
+Break is over, you can continue!
+Break is over, you can continue!
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+X connection to :1 broken (explicit kill or server shutdown).
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:367: A write error is unrecoverable: write unix @->/tmp/.X11-unix/X1: write: broken pipe
+panic: close of closed channel
+
+goroutine 25 [running]:
+github.com/BurntSushi/xgb.(*Conn).Close(...)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:140
+github.com/BurntSushi/xgb.(*Conn).readResponses(0xc0002e7d90)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:405 +0x246
+created by github.com/BurntSushi/xgb.postNewConn in goroutine 1
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:133 +0x2b6
+# github.com/Ikit24/frozenpea
+./windows.go:105:18: undefined: canvas.NewImageFormFile
+./windows.go:108:4: declared and not used: formContent
+# github.com/Ikit24/frozenpea
+./windows.go:105:18: undefined: canvas.NewImageFormFile
+./windows.go:108:4: declared and not used: formContent

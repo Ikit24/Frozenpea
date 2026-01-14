@@ -87,11 +87,14 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 	var start fyne.Window
 	
 	fyne.DoAndWait(func () {
-		start = a.NewWindow("Setup")
+		start = a.NewWindow("Welcome to FrozenPea")
 		workEntry := widget.NewEntry()
+		workEntry.Resize(fyne.NewSize(150, 60))
+		
 		breakEntry := widget.NewEntry()
-		workDur := widget.NewFormItem("Session duration", workEntry)
-		breakDur := widget.NewFormItem("Break duration", breakEntry)
+		breakEntry.Resize(fyne.NewSize(150, 60))
+		workDur := widget.NewFormItem("Session duration (minutes):", workEntry)
+		breakDur := widget.NewFormItem("Break duration (minutes):", breakEntry)
 
 		form := widget.NewForm(workDur, breakDur)
 		
@@ -102,11 +105,11 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 			start.Close()
 		})
 
-			img := canvas.NewImageFormFile("./fpea.jpg")
+			img := canvas.NewImageFromFile("./fpea.jpg")
 			img.FillMode = canvas.ImageFillStretch
 
 			formContent := container.NewVBox(form, confirmButton)
-			content := container.NewVBox(form, confirmButton)
+			content := container.NewStack(img, container.NewCenter(formContent))
 
 			start.SetContent(content)
 			start.Resize(fyne.NewSize(1000, 650))
