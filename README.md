@@ -4,7 +4,7 @@ A productivity app which locks the user out from the machine after a set of minu
 
 ## Features
 
-- Automatic screen lock after 50 minutes (customizable)
+- Automatic screen lock after the set amount of minutes
 - Background window display during rest periods
 - Helps prevent repetitive strain injuries (RSI)
 - Promotes healthier work habits
