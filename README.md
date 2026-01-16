@@ -38,7 +38,8 @@ A productivity app which locks the user out from the machine after a set of minu
 
 ## Usage
 
-Once the application is running, you will be greeted with a background picture window when it is time to take a rest (after 50 minutes by default).
+On startup you will have the break/workduration setup window.
+Once the settings are confirmed the application starts, you will be greeted with a background picture window when it is time to take a rest.
 
 ## Automatic Startup Configuration (Linux)
 
