@@ -2,12 +2,15 @@ package main
 
 import (
 	"fmt"
+	"errors"
+	"strconv"
 	"image/color"
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/canvas"
 	"fyne.io/fyne/v2/widget"
 	"fyne.io/fyne/v2/driver"
 	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/dialog"
 
 	"github.com/BurntSushi/xgb"
 	"github.com/BurntSushi/xgb/xproto"
@@ -99,6 +102,17 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 		form := widget.NewForm(workDur, breakDur)
 		
 		confirmButton := widget.NewButton("Confirm changes", func() {
+			_, err := strconv.Atoi(workEntry.Text)
+			if err != nil {
+				dialog.ShowError(errors.New("Please enter a valid number"), start)
+				return
+			}
+
+			_, err = strconv.Atoi(breakEntry.Text)
+			if err != nil {
+				dialog.ShowError(errors.New("Please enter a valid number"), start)
+				return
+			}
 			appConfig.WorkDuration = workEntry.Text
 			appConfig.BreakDuration = breakEntry.Text
 			setupDone <- true
