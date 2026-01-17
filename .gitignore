@@ -24,3 +24,5 @@ config.local.json
 *.local.yml
 *.tar.gz
 startup.log
+GHP
+GHP.pub
