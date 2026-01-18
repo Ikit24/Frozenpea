@@ -1,6 +1,6 @@
 # Frozenpea
 
-A productivity app which locks the user out from the machine after a set of minutes to prevent RSI related problems and support healthier work.
+A productivity app which locks the user out from the machine after a set of minutes to prevent RSI related problems and support healthier work-life.
 
 ## Features
 
@@ -38,8 +38,9 @@ A productivity app which locks the user out from the machine after a set of minu
 
 ## Usage
 
-On startup you will have the break/workduration setup window.
-Once the settings are confirmed the application starts, you will be greeted with a background picture window when it is time to take a rest.
+On startup you will have the option to set break and workduration.
+Once the settings are confirmed the application starts, you will be notified when the break is about to happen.
+After break starts you cannot interact with your machine.
 
 ## Automatic Startup Configuration (Linux)
 
