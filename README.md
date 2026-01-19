@@ -9,6 +9,13 @@ A productivity app which locks the user out from the machine after a set of minu
 - Helps prevent repetitive strain injuries (RSI)
 - Promotes healthier work habits
 
+## System Requirements
+- Linux with X11 display server
+- Go 1.21 or higher
+- Pop!_OS, Ubuntu, Debian, Fedora (X11 session), or other X11-based distributions
+
+**Note:** Wayland is not currently supported. Ensure you're running an X11 session.
+
 ## Prerequisites
 
 - Go 1.21+ installed: https://go.dev/dl/
