@@ -9,6 +9,10 @@ import (
 	"syscall"
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
+
+	"github.com/gopxl/beep"
+	"github.com/gopxl/beep/mp3"
+	"github.com/gopxl/beep/speaker"
 )
 
 type Config struct {
@@ -18,8 +22,22 @@ type Config struct {
 
 var appConfig Config
 
+speaker.Init(sampleRate, sampleRate.N(time.Second/10))
+
+func playSound(filename string) {
+	f, _ := os.Open(filename)
+	defer f.Close()
+
+	streamer, format, _ := mp3.Decode(f)
+	defer streamer.Close()
+
+	speaker.Play(streamer)
+}
+
 func main () {
 	a := app.New()
+
+	speaker.Init(sampleRate, sampleRate.N(time.Second/10))
 
 	sigs := make(chan os.Signal, 1)
 	signal.Notify(sigs, syscall.SIGINT, syscall.SIGTERM)
@@ -57,6 +75,7 @@ func main () {
 				var n fyne.Window
 				select {
 				case <- time.After(workDur - 1 * time.Minute):
+					playSound(before_break)
 					fmt.Println("Mandatory break starts in 1 minute! Make sure you save your work.")
 					n = showNotification(a)
 				case <- done:
