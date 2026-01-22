@@ -22,22 +22,41 @@ type Config struct {
 
 var appConfig Config
 
-speaker.Init(sampleRate, sampleRate.N(time.Second/10))
-
-func playSound(filename string) {
-	f, _ := os.Open(filename)
+func initAudio() {
+	f, _ := os.Open("./before_break.mp3")
 	defer f.Close()
 
 	streamer, format, _ := mp3.Decode(f)
+	streamer.Close()
+
+	speaker.Init(format.SampleRate, format.SampleRate.N(time.Second/10))
+}
+
+func playSound(filename string) {
+	f, err := os.Open(filename)
+	if err != nil {
+		fmt.Println("Error opening file:", err)
+		return
+	}
+	defer f.Close()
+
+	streamer, _, err := mp3.Decode(f)
+	if err != nil {
+		fmt.Println("Error decoding:", err)
+		return
+	}
 	defer streamer.Close()
 
-	speaker.Play(streamer)
+	done := make(chan bool)
+	speaker.Play(beep.Seq(streamer, beep.Callback(func() {
+		done <- true
+	})))
+	<-done
 }
 
 func main () {
+	initAudio()
 	a := app.New()
-
-	speaker.Init(sampleRate, sampleRate.N(time.Second/10))
 
 	sigs := make(chan os.Signal, 1)
 	signal.Notify(sigs, syscall.SIGINT, syscall.SIGTERM)
@@ -47,6 +66,7 @@ func main () {
 
 	go func () {
 		time.Sleep(100 * time.Millisecond)
+		playSound("intro.mp3")
 		setupDone := make(chan bool)
 		startupWindow(a, setupDone)
 		<-setupDone
@@ -75,9 +95,9 @@ func main () {
 				var n fyne.Window
 				select {
 				case <- time.After(workDur - 1 * time.Minute):
-					playSound(before_break)
 					fmt.Println("Mandatory break starts in 1 minute! Make sure you save your work.")
 					n = showNotification(a)
+					playSound("before_break.mp3")
 				case <- done:
 					break mainLoop
 				}

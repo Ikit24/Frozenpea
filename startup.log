@@ -562,3 +562,13 @@ main.main()
 exit status 2
 Session is running.
 Mandatory break starts in 1 minute! Make sure you save your work.
+XIO:  fatal IO error 104 (Connection reset by peer) on X server ":1"
+      after 755 requests (754 known processed) with 7 events remaining.
+# github.com/Ikit24/frozenpea
+./main.go:25:1: syntax error: non-declaration statement outside function body
+# github.com/Ikit24/frozenpea
+./main.go:25:1: syntax error: non-declaration statement outside function body
+# github.com/Ikit24/frozenpea
+./main.go:25:1: syntax error: non-declaration statement outside function body
+# github.com/Ikit24/frozenpea
+./main.go:25:1: syntax error: non-declaration statement outside function body
