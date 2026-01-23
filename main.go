@@ -23,7 +23,7 @@ type Config struct {
 var appConfig Config
 
 func initAudio() {
-	f, _ := os.Open("./before_break.mp3")
+	f, _ := os.Open("./assets/before_break.mp3")
 	defer f.Close()
 
 	streamer, format, _ := mp3.Decode(f)
@@ -66,7 +66,7 @@ func main () {
 
 	go func () {
 		time.Sleep(100 * time.Millisecond)
-		playSound("intro.mp3")
+		playSound("./assets/intro.mp3")
 		setupDone := make(chan bool)
 		startupWindow(a, setupDone)
 		<-setupDone
@@ -97,7 +97,7 @@ func main () {
 				case <- time.After(workDur - 1 * time.Minute):
 					fmt.Println("Mandatory break starts in 1 minute! Make sure you save your work.")
 					n = showNotification(a)
-					playSound("before_break.mp3")
+					playSound("./assets/before_break.mp3")
 				case <- done:
 					break mainLoop
 				}

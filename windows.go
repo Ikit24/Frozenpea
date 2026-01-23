@@ -21,7 +21,7 @@ func showBreakWindow(a fyne.App) fyne.Window {
 	fyne.DoAndWait(func() {
 		w = a.NewWindow("Break time!")
 
-		img := canvas.NewImageFromFile("./peakpx.jpg")
+		img := canvas.NewImageFromFile("./assets/peakpx.jpg")
 		img.FillMode = canvas.ImageFillStretch
 		w.SetContent(img)
 		w.SetFullScreen(true)
@@ -61,7 +61,7 @@ func showNotification(a fyne.App) fyne.Window {
 	var n fyne.Window
 	fyne.DoAndWait(func() {
 		n = a.NewWindow("Break in 1 minute!")
-		img := canvas.NewImageFromFile("./notify.jpg")
+		img := canvas.NewImageFromFile("./assets/notify.jpg")
 		img.FillMode = canvas.ImageFillStretch
 
 		topText := canvas.NewText("Break starts in 1 minute! Save your work.", color.NRGBA{R: 255, G: 0, B: 0, A: 255})
@@ -119,7 +119,7 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 			start.Close()
 		})
 
-			img := canvas.NewImageFromFile("./fpea.jpg")
+			img := canvas.NewImageFromFile("./assets/fpea.jpg")
 			img.FillMode = canvas.ImageFillStretch
 
 			formContent := container.NewVBox(form, confirmButton)
