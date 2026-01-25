@@ -66,9 +66,9 @@ func main () {
 
 	go func () {
 		time.Sleep(100 * time.Millisecond)
-		playSound("./assets/intro.mp3")
 		setupDone := make(chan bool)
 		startupWindow(a, setupDone)
+		playSound("./assets/intro.mp3")
 		<-setupDone
 
 		fmt.Println("Session is running.")

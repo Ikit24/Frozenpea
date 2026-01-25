@@ -64,7 +64,7 @@ func showNotification(a fyne.App) fyne.Window {
 		img := canvas.NewImageFromFile("./assets/notify.jpg")
 		img.FillMode = canvas.ImageFillStretch
 
-		topText := canvas.NewText("Break starts in 1 minute! Save your work.", color.NRGBA{R: 255, G: 0, B: 0, A: 255})
+		topText := canvas.NewText("Break starts in 1 minute! Save your work.", color.NRGBA{R: 255, G: 255, B: 255, A: 255})
 		topText.Alignment = fyne.TextAlignCenter
 		topText.TextSize = 24
 		topText.TextStyle = fyne.TextStyle{Bold: true}
