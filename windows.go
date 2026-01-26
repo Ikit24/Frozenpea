@@ -74,7 +74,7 @@ func showNotification(a fyne.App) fyne.Window {
 			widget.NewLabel(""),
 		)
 		
-		content := container.NewStack(img, container.NewBorder(textContainer, nil, nil, nil))
+		content := container.NewStack(img, container.NewCenter(textContainer))
 
 		n.SetContent(content)
 		n.Resize(fyne.NewSize(1265, 650))
