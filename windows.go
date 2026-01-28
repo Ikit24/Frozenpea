@@ -100,6 +100,7 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 		breakDur := widget.NewFormItem("Break duration (minutes):", breakEntry)
 
 		form := widget.NewForm(workDur, breakDur)
+		start.SetCloseIntercept(func() {})
 		
 		confirmButton := widget.NewButton("Confirm changes", func() {
 			_, err := strconv.Atoi(workEntry.Text)

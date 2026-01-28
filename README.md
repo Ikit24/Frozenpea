@@ -124,7 +124,7 @@ pkill main
 crontab -e
 # Delete the @reboot line, then save
 ```
-MIT License
+### MIT License
 
 Copyright (c) 2026 Attila Szasz
 
