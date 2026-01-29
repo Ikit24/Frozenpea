@@ -100,7 +100,6 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 		breakDur := widget.NewFormItem("Break duration (minutes):", breakEntry)
 
 		form := widget.NewForm(workDur, breakDur)
-		start.SetCloseIntercept(func() {})
 		
 		confirmButton := widget.NewButton("Confirm changes", func() {
 			_, err := strconv.Atoi(workEntry.Text)
@@ -120,10 +119,15 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 			start.Close()
 		})
 
+		cancelSess := widget.NewButton("Cancel session", func() {
+			a.Quit()
+		})
+		cancelSess.Resize(fyne.NewSize(150, 60))
+
 			img := canvas.NewImageFromFile("./assets/fpea.jpg")
 			img.FillMode = canvas.ImageFillStretch
 
-			formContent := container.NewVBox(form, confirmButton)
+			formContent := container.NewVBox(form, confirmButton, cancelSess)
 			content := container.NewStack(img, container.NewCenter(formContent))
 
 			start.SetContent(content)
