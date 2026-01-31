@@ -71,7 +71,6 @@ func main () {
 		playSound("./assets/intro.mp3")
 		<-setupDone
 
-		fmt.Println("Session is running.")
 		workMins, _ := strconv.Atoi(appConfig.WorkDuration)
 		workDur := time.Duration(workMins) * time.Minute
 		breakMins, _ := strconv.Atoi(appConfig.BreakDuration)

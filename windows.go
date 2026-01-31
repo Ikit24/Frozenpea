@@ -59,6 +59,7 @@ func showBreakWindow(a fyne.App) fyne.Window {
 
 func showNotification(a fyne.App) fyne.Window {
 	var n fyne.Window
+
 	fyne.DoAndWait(func() {
 		n = a.NewWindow("Break in 1 minute!")
 		img := canvas.NewImageFromFile("./assets/notify.jpg")
@@ -83,6 +84,7 @@ func showNotification(a fyne.App) fyne.Window {
 		})
 		n.Show()
 	})
+
 	return n
 }
 
