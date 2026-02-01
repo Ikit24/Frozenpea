@@ -82,7 +82,7 @@ func main () {
 			if isBreak {
 				select {
 				case <- time.After(breakDur):
-					fmt.Println("Break is over, you can continue!")
+					//Break end
 					fyne.Do(func() {
 					w.Close()
 					})
@@ -94,7 +94,7 @@ func main () {
 				var n fyne.Window
 				select {
 				case <- time.After(workDur - 1 * time.Minute):
-					fmt.Println("Mandatory break starts in 1 minute! Make sure you save your work.")
+					//Break in 1 min
 					n = showNotification(a)
 					playSound("./assets/before_break.mp3")
 				case <- done:
@@ -102,7 +102,7 @@ func main () {
 				}
 				select {
 				case <- time.After(1 * time.Minute):
-					fmt.Println("Starting mandatory break.")
+					//Break start
 					fyne.Do(func() { n.Close() })
 					w = showBreakWindow(a)
 				case <- done:
