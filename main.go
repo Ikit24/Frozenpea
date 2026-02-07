@@ -108,9 +108,8 @@ func main () {
 				case <- done:
 					break mainLoop
 				}
+				isBreak = true
 			}
-
-			isBreak = true
 		}
 	} ()
 	dummy := a.NewWindow("")
