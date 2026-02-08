@@ -86,6 +86,7 @@ func main () {
 					fyne.Do(func() {
 					w.Close()
 					})
+					playSound("./assets/break_end.mp3")
 				case <- done:
 				break mainLoop
 				}
