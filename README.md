@@ -4,7 +4,7 @@ A productivity app which locks the user out from the machine after a set of minu
 
 ## Features
 
-- Notifaction sound upon startup and before break starts
+- Notification sound upon startup and before break starts
 - Automatic screen lock after the set amount of minutes
 - Background window display during rest periods
 - Helps prevent repetitive strain injuries (RSI)
@@ -58,7 +58,7 @@ Follow these steps to make FrozenPea run automatically on system startup.
 ### 1. Compile the Program
 ```bash
 cd ~/projects/code/FrozenPea
-go build -o main main.go
+go build -o frozenpea
 chmod +x main
 ```
 
@@ -70,7 +70,7 @@ nvim ~/startup.sh
 Add the following content (replace `ati` with your username):
 ```bash
 #!/bin/bash
-/home/ati/projects/code/FrozenPea/main >> /home/ati/projects/code/FrozenPea/startup.log 2>&1
+/home/ati/projects/code/FrozenPea/frozenpea >> /home/ati/projects/code/FrozenPea/startup.log 2>&1
 ```
 
 Save and exit (Ctrl+X, Y, Enter)
@@ -117,7 +117,7 @@ cat ~/projects/code/FrozenPea/startup.log
 
 **Stop the program:**
 ```bash
-pkill main
+pkill frozenpea
 ```
 
 **Remove from startup:**
