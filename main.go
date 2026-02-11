@@ -106,6 +106,7 @@ func main () {
 					//Break start
 					fyne.Do(func() { n.Close() })
 					w = showBreakWindow(a)
+					playSound("./assets/break_start.mp3")
 				case <- done:
 					break mainLoop
 				}
