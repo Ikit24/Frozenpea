@@ -1856,3 +1856,9 @@ fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0003f8150?, {0x0?, 0x2?})
 main.main()
 	/home/ati/projects/code/FrozenPea/main.go:117 +0x149
 exit status 2
+XIO:  fatal IO error 2 (No such file or directory) on X server ":1"
+      after 715 requests (715 known processed) with 1 events remaining.
+# github.com/Ikit24/frozenpea
+./windows.go:106:3: declared and not used: check
+# github.com/Ikit24/frozenpea
+./windows.go:106:3: declared and not used: check

@@ -103,14 +103,6 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 
 		form := widget.NewForm(workDur, breakDur)
 		
-		check := widget.NewCheck("Please select your preferences:", func(checked bool) {
-			if checked {
-				fmt.Println("use this setup")
-			} else {
-				fmt.Println("don't use setup")
-			}
-		})
-
 		confirmButton := widget.NewButton("Confirm changes", func() {
 			_, err := strconv.Atoi(workEntry.Text)
 			if err != nil {
@@ -146,3 +138,15 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 			start.Show()
 	})
 }
+
+func startPreferences (a fyne.App) fyne.Window {
+	check := widget.NewCheck("Please select your preferences:", func(checked bool) {
+		if checked {
+			fmt.Println("use this setup")
+		} else {
+			fmt.Println("don't use setup")
+		}
+	})
+}
+
+
