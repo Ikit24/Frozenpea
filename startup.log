@@ -1862,3 +1862,9 @@ XIO:  fatal IO error 2 (No such file or directory) on X server ":1"
 ./windows.go:106:3: declared and not used: check
 # github.com/Ikit24/frozenpea
 ./windows.go:106:3: declared and not used: check
+# github.com/Ikit24/frozenpea
+./windows.go:143:2: declared and not used: check
+./windows.go:150:1: missing return
+# github.com/Ikit24/frozenpea
+./windows.go:143:2: declared and not used: check
+./windows.go:150:1: missing return
