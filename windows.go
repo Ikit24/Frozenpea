@@ -16,6 +16,14 @@ import (
 	"github.com/BurntSushi/xgb/xproto"
 )
 
+var SoundConfig struct {
+	IntroSound        bool
+	NotificatoinSound bool
+	BeforeBreakSound  bool
+	BreakStartSound   bool
+	BreakEndSound     bool
+}
+
 func showBreakWindow(a fyne.App) fyne.Window {
 	var w fyne.Window
 	fyne.DoAndWait(func() {
@@ -102,13 +110,13 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 		breakDur := widget.NewFormItem("Break duration (minutes):", breakEntry)
 
 		form := widget.NewForm(workDur, breakDur)
-		check := widget.NewCheck("Please select your preferences:", func(checked bool) {
+		checkbox := widget.NewCheck("Please select your preferences:", func(checked bool) {
 		if checked {
-			fmt.Println("use this setup")
+			enableAutoStart = true
 		} else {
-			fmt.Println("don't use setup")
+			enableAutoStart = false
 		}
-		})	
+		})
 
 		confirmButton := widget.NewButton("Confirm changes", func() {
 			_, err := strconv.Atoi(workEntry.Text)
@@ -136,7 +144,7 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 			img := canvas.NewImageFromFile("./assets/fpea.jpg")
 			img.FillMode = canvas.ImageFillStretch
 
-			formContent := container.NewVBox(form, confirmButton, cancelSess)
+			formContent := container.NewVBox(form, confirmButton, cancelSess, check)
 			content := container.NewStack(img, container.NewCenter(formContent))
 
 			start.SetContent(content)

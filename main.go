@@ -68,7 +68,9 @@ func main () {
 		time.Sleep(100 * time.Millisecond)
 		setupDone := make(chan bool)
 		startupWindow(a, setupDone)
-		playSound("./assets/intro.mp3")
+		if IntroSound {
+			playSound("./assets/intro.mp3")
+		}
 		<-setupDone
 
 		workMins, _ := strconv.Atoi(appConfig.WorkDuration)
@@ -86,7 +88,9 @@ func main () {
 					fyne.Do(func() {
 					w.Close()
 					})
-					playSound("./assets/break_end.mp3")
+					if BreakEndSound {
+						playSound("./assets/break_end.mp3")
+					}
 				case <- done:
 				break mainLoop
 				}
@@ -97,7 +101,9 @@ func main () {
 				case <- time.After(workDur - 1 * time.Minute):
 					//Break in 1 min
 					n = showNotification(a)
-					playSound("./assets/before_break.mp3")
+					if BeforeBreakSound {
+						playSound("./assets/before_break.mp3")
+					}
 				case <- done:
 					break mainLoop
 				}
@@ -106,7 +112,9 @@ func main () {
 					//Break start
 					fyne.Do(func() { n.Close() })
 					w = showBreakWindow(a)
-					playSound("./assets/break_start.mp3")
+					if BreakStartSound {
+						playSound("./assets/break_start.mp3")
+					}
 				case <- done:
 					break mainLoop
 				}
