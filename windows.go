@@ -109,13 +109,29 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 		workDur := widget.NewFormItem("Session duration (minutes):", workEntry)
 		breakDur := widget.NewFormItem("Break duration (minutes):", breakEntry)
 
+var SoundConfig struct {
+	IntroSound        bool
+	NotificatoinSound bool
+	BeforeBreakSound  bool
+	BreakStartSound   bool
+	BreakEndSound     bool
+}
+
 		form := widget.NewForm(workDur, breakDur)
 		checkbox := widget.NewCheck("Please select your preferences:", func(checked bool) {
-		if checked {
-			enableAutoStart = true
-		} else {
-			enableAutoStart = false
-		}
+			if checked {
+				IntroSound        = true
+				NotificatoinSound = true
+				BeforeBreakSound  = true
+				BreakStartSound   = true
+				BreakEndSound     = true
+			} else {
+				IntroSound        = false
+				NotificatoinSound = false
+				BeforeBreakSound  = false
+				BreakStartSound   = false
+				BreakEndSound     = false
+			}
 		})
 
 		confirmButton := widget.NewButton("Confirm changes", func() {
@@ -144,7 +160,7 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 			img := canvas.NewImageFromFile("./assets/fpea.jpg")
 			img.FillMode = canvas.ImageFillStretch
 
-			formContent := container.NewVBox(form, confirmButton, cancelSess, check)
+			formContent := container.NewVBox(form, confirmButton, cancelSess, checkbox)
 			content := container.NewStack(img, container.NewCenter(formContent))
 
 			start.SetContent(content)

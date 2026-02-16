@@ -1872,3 +1872,21 @@ XIO:  fatal IO error 2 (No such file or directory) on X server ":1"
 ./windows.go:105:3: declared and not used: check
 # github.com/Ikit24/frozenpea
 ./windows.go:105:3: declared and not used: check
+# github.com/Ikit24/frozenpea
+./main.go:71:6: undefined: IntroSound
+./main.go:91:9: undefined: BreakEndSound
+./main.go:104:9: undefined: BeforeBreakSound
+./main.go:115:9: undefined: BreakStartSound
+./windows.go:113:3: declared and not used: checkbox
+./windows.go:115:4: undefined: enableAutoStart
+./windows.go:117:4: undefined: enableAutoStart
+./windows.go:147:70: undefined: check
+# github.com/Ikit24/frozenpea
+./main.go:71:6: undefined: IntroSound
+./main.go:91:9: undefined: BreakEndSound
+./main.go:104:9: undefined: BeforeBreakSound
+./main.go:115:9: undefined: BreakStartSound
+./windows.go:113:3: declared and not used: checkbox
+./windows.go:115:4: undefined: enableAutoStart
+./windows.go:117:4: undefined: enableAutoStart
+./windows.go:147:70: undefined: check
