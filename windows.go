@@ -16,13 +16,15 @@ import (
 	"github.com/BurntSushi/xgb/xproto"
 )
 
-var SoundConfig struct {
+type SoundConfig struct {
 	IntroSound        bool
-	NotificatoinSound bool
+	NotificationSound bool
 	BeforeBreakSound  bool
 	BreakStartSound   bool
 	BreakEndSound     bool
 }
+
+var soundConfig SoundConfig
 
 func showBreakWindow(a fyne.App) fyne.Window {
 	var w fyne.Window
@@ -109,28 +111,20 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 		workDur := widget.NewFormItem("Session duration (minutes):", workEntry)
 		breakDur := widget.NewFormItem("Break duration (minutes):", breakEntry)
 
-var SoundConfig struct {
-	IntroSound        bool
-	NotificatoinSound bool
-	BeforeBreakSound  bool
-	BreakStartSound   bool
-	BreakEndSound     bool
-}
-
 		form := widget.NewForm(workDur, breakDur)
 		checkbox := widget.NewCheck("Please select your preferences:", func(checked bool) {
 			if checked {
-				IntroSound        = true
-				NotificatoinSound = true
-				BeforeBreakSound  = true
-				BreakStartSound   = true
-				BreakEndSound     = true
+				soundConfig.IntroSound        = true
+				soundConfig.NotificationSound = true
+				soundConfig.BeforeBreakSound  = true
+				soundConfig.BreakStartSound   = true
+				soundConfig.BreakEndSound     = true
 			} else {
-				IntroSound        = false
-				NotificatoinSound = false
-				BeforeBreakSound  = false
-				BreakStartSound   = false
-				BreakEndSound     = false
+				soundConfig.IntroSound        = false
+				soundConfig.NotificationSound = false
+				soundConfig.BeforeBreakSound  = false
+				soundConfig.BreakStartSound   = false
+				soundConfig.BreakEndSound     = false
 			}
 		})
 

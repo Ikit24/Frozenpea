@@ -1890,3 +1890,27 @@ XIO:  fatal IO error 2 (No such file or directory) on X server ":1"
 ./windows.go:115:4: undefined: enableAutoStart
 ./windows.go:117:4: undefined: enableAutoStart
 ./windows.go:147:70: undefined: check
+# github.com/Ikit24/frozenpea
+./main.go:71:6: undefined: IntroSound
+./main.go:91:9: undefined: BreakEndSound
+./main.go:104:9: undefined: BeforeBreakSound
+./main.go:115:9: undefined: BreakStartSound
+./windows.go:123:5: undefined: IntroSound
+./windows.go:124:5: undefined: NotificatoinSound
+./windows.go:125:5: undefined: BeforeBreakSound
+./windows.go:126:5: undefined: BreakStartSound
+./windows.go:127:5: undefined: BreakEndSound
+./windows.go:129:5: undefined: IntroSound
+./windows.go:129:5: too many errors
+# github.com/Ikit24/frozenpea
+./main.go:71:6: undefined: IntroSound
+./main.go:91:9: undefined: BreakEndSound
+./main.go:104:9: undefined: BeforeBreakSound
+./main.go:115:9: undefined: BreakStartSound
+./windows.go:123:5: undefined: IntroSound
+./windows.go:124:5: undefined: NotificatoinSound
+./windows.go:125:5: undefined: BeforeBreakSound
+./windows.go:126:5: undefined: BreakStartSound
+./windows.go:127:5: undefined: BreakEndSound
+./windows.go:129:5: undefined: IntroSound
+./windows.go:129:5: too many errors
