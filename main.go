@@ -68,9 +68,7 @@ func main () {
 		time.Sleep(100 * time.Millisecond)
 		setupDone := make(chan bool)
 		startupWindow(a, setupDone)
-		if soundConfig.IntroSound {
-			playSound("./assets/intro.mp3")
-		}
+		playSound("./assets/intro.mp3")
 		<-setupDone
 
 		workMins, _ := strconv.Atoi(appConfig.WorkDuration)

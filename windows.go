@@ -17,7 +17,6 @@ import (
 )
 
 type SoundConfig struct {
-	IntroSound        bool
 	NotificationSound bool
 	BeforeBreakSound  bool
 	BreakStartSound   bool
@@ -114,13 +113,11 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 		form := widget.NewForm(workDur, breakDur)
 		checkbox := widget.NewCheck("Please select your preferences:", func(checked bool) {
 			if checked {
-				soundConfig.IntroSound        = true
 				soundConfig.NotificationSound = true
 				soundConfig.BeforeBreakSound  = true
 				soundConfig.BreakStartSound   = true
 				soundConfig.BreakEndSound     = true
 			} else {
-				soundConfig.IntroSound        = false
 				soundConfig.NotificationSound = false
 				soundConfig.BeforeBreakSound  = false
 				soundConfig.BreakStartSound   = false
