@@ -1954,3 +1954,7 @@ fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0003b0150?, {0x0?, 0x2?})
 main.main()
 	/home/ati/projects/code/FrozenPea/main.go:125 +0x149
 exit status 2
+# github.com/Ikit24/frozenpea
+./windows.go:166:71: syntax error: unexpected newline in argument list; possibly missing comma or )
+# github.com/Ikit24/frozenpea
+./windows.go:166:71: syntax error: unexpected newline in argument list; possibly missing comma or )

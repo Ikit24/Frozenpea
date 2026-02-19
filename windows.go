@@ -111,16 +111,36 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 		breakDur := widget.NewFormItem("Break duration (minutes):", breakEntry)
 
 		form := widget.NewForm(workDur, breakDur)
-		checkbox := widget.NewCheck("Please select your preferences:", func(checked bool) {
+		notify := widget.NewCheck("Check this for Notification sound:", func(checked bool) {
 			if checked {
 				soundConfig.NotificationSound = true
+			} else {
+				soundConfig.NotificationSound = false
+			}
+		})
+
+		notifyBeforeBreak := widget.NewCheck("Check this for Before break Notification sound:", func(checked bool) {
+			if checked {
 				soundConfig.BeforeBreakSound  = true
+			} else {
+				soundConfig.BeforeBreakSound  = false
+			}
+		})
+
+		notifyStartBreak := widget.NewCheck("Check this for Break Notification:", func(checked bool) {
+			if checked {
 				soundConfig.BreakStartSound   = true
 				soundConfig.BreakEndSound     = true
 			} else {
-				soundConfig.NotificationSound = false
-				soundConfig.BeforeBreakSound  = false
 				soundConfig.BreakStartSound   = false
+				soundConfig.BreakEndSound     = false
+			}
+		})
+
+		notifyEndBreak := widget.NewCheck("Check this for end of break notification:", func(checked bool) {
+			if checked {
+				soundConfig.BreakEndSound     = true
+			} else {
 				soundConfig.BreakEndSound     = false
 			}
 		})
@@ -151,7 +171,11 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 			img := canvas.NewImageFromFile("./assets/fpea.jpg")
 			img.FillMode = canvas.ImageFillStretch
 
-			formContent := container.NewVBox(form, confirmButton, cancelSess, checkbox)
+			formContent := container.NewVBox(
+			form, notify,
+			notifyBeforeBreak, notifyStartBreak,
+			notifyEndBreak, confirmButton, cancelSess,
+			)
 			content := container.NewStack(img, container.NewCenter(formContent))
 
 			start.SetContent(content)
