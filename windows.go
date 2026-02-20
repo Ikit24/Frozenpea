@@ -130,10 +130,8 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 		notifyStartBreak := widget.NewCheck("Check this for Break Notification:", func(checked bool) {
 			if checked {
 				soundConfig.BreakStartSound   = true
-				soundConfig.BreakEndSound     = true
 			} else {
 				soundConfig.BreakStartSound   = false
-				soundConfig.BreakEndSound     = false
 			}
 		})
 
