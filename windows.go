@@ -97,6 +97,10 @@ func showNotification(a fyne.App) fyne.Window {
 	return n
 }
 
+type TextStyle struct {
+	Bold      bool
+}
+
 func startupWindow(a fyne.App, setupDone chan bool) {
 	var start fyne.Window
 	
@@ -108,39 +112,26 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 		breakEntry := widget.NewEntry()
 		breakEntry.Resize(fyne.NewSize(150, 60))
 		workDur := widget.NewFormItem("Session duration (minutes):", workEntry)
-		breakDur := widget.NewFormItem("Break duration (minutes):", breakEntry)
+		breakDur := widget.NewFormItem("Break duration (minutes):   ", breakEntry)
 
 		form := widget.NewForm(workDur, breakDur)
-		notify := widget.NewCheck("Check this for Notification sound:", func(checked bool) {
-			if checked {
-				soundConfig.NotificationSound = true
-			} else {
-				soundConfig.NotificationSound = false
-			}
+
+		notify := widget.NewCheck("", func(checked bool) {
+			soundConfig.NotificationSound = checked
+		})
+		notifyText := canvas.NewText("Notification sound:", color.NRGBA{R: 255, G: 255, B: 255, A: 255})
+		notifyBox := container.NewHBox(notify, notifyText)
+
+		notifyBeforeBreak := widget.NewCheck("Before break notification:", func(checked bool) {
+			soundConfig.BeforeBreakSound  = true
 		})
 
-		notifyBeforeBreak := widget.NewCheck("Check this for Before break Notification sound:", func(checked bool) {
-			if checked {
-				soundConfig.BeforeBreakSound  = true
-			} else {
-				soundConfig.BeforeBreakSound  = false
-			}
+		notifyStartBreak := widget.NewCheck("Break start notification:", func(checked bool) {
+			soundConfig.BreakStartSound   = true
 		})
 
-		notifyStartBreak := widget.NewCheck("Check this for Break Notification:", func(checked bool) {
-			if checked {
-				soundConfig.BreakStartSound   = true
-			} else {
-				soundConfig.BreakStartSound   = false
-			}
-		})
-
-		notifyEndBreak := widget.NewCheck("Check this for end of break notification:", func(checked bool) {
-			if checked {
+		notifyEndBreak := widget.NewCheck("End of break notification:", func(checked bool) {
 				soundConfig.BreakEndSound     = true
-			} else {
-				soundConfig.BreakEndSound     = false
-			}
 		})
 
 		confirmButton := widget.NewButton("Confirm changes", func() {
@@ -170,7 +161,7 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 			img.FillMode = canvas.ImageFillStretch
 
 			formContent := container.NewVBox(
-			form, notify,
+			form, notifyBox,
 			notifyBeforeBreak, notifyStartBreak,
 			notifyEndBreak, confirmButton, cancelSess,
 			)
