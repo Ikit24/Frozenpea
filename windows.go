@@ -133,9 +133,12 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 		startBreakText.TextStyle = fyne.TextStyle{Bold: true}
 		breakStartBox := container.NewHBox(notifyStartBreak, startBreakText)
 
-		notifyEndBreak := widget.NewCheck("End of break notification", func(checked bool) {
+		notifyEndBreak := widget.NewCheck("", func(checked bool) {
 				soundConfig.BreakEndSound     = checked
 		})
+		endBreakText := canvas.NewText("End of break notification", color.NRGBA{R: 255, G: 255, B: 255, A: 255})
+		endBreakText.TextStyle = fyne.TextStyle{Bold: true}
+		endBreakBox := container.NewHBox(notifyEndBreak, endBreakText)
 
 		confirmButton := widget.NewButton("Confirm changes", func() {
 			_, err := strconv.Atoi(workEntry.Text)
@@ -166,7 +169,7 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 			formContent := container.NewVBox(
 			form, notifyBox,
 			beforeBreakBox, breakStartBox,
-			notifyEndBreak, confirmButton, cancelSess,
+			endBreakBox, confirmButton, cancelSess,
 			)
 			content := container.NewStack(img, container.NewCenter(formContent))
 
