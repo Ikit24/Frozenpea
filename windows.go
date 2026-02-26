@@ -25,11 +25,7 @@ type SoundConfig struct {
 
 var soundConfig SoundConfig
 
-func createBoldLabel(text string) *canvas.Text {
-	label := canvas.NewText(text, color.NRGBA{R: 255, G: 255, B: 255, A:255})
-	label.TextStyle = fyne.TextStyle{Bold: true}
-	return label
-}
+
 
 func createCheckBox(label string, onChange func(bool)) *fyne.Container {
 	check := widget.NewCheck("", onChange)
@@ -109,6 +105,11 @@ func showNotification(a fyne.App) fyne.Window {
 	return n
 }
 
+func createSoundCheckbox(label string, configField *bool) *fyne.Container {
+	check := widget.NewCheck("", func(checked bool) {}
+	return
+}
+
 func startupWindow(a fyne.App, setupDone chan bool) {
 	var start fyne.Window
 	
@@ -131,7 +132,7 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 		notifyBeforeBreak := widget.NewCheck("", func(checked bool) {
 			soundConfig.BeforeBreakSound  = checked
 		})
-		beforeBreakText := canvas.NewText("Break start notification", color.NRGBA{R: 255, G: 255, B: 255, A: 255})
+		beforeBreakText := canvas.NewText("Before break start notification", color.NRGBA{R: 255, G: 255, B: 255, A: 255})
 		beforeBreakText.TextStyle = fyne.TextStyle{Bold: true}
 		beforeBreakBox := container.NewHBox(notifyBeforeBreak, beforeBreakText)
 
