@@ -2330,3 +2330,9 @@ fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0003024d0?, {0x0?, 0x2?})
 main.main()
 	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
 exit status 2
+# github.com/Ikit24/frozenpea
+./windows.go:109:52: syntax error: unexpected newline in argument list; possibly missing comma or )
+./windows.go:110:2: syntax error: unexpected keyword return at end of statement
+# github.com/Ikit24/frozenpea
+./windows.go:109:52: syntax error: unexpected newline in argument list; possibly missing comma or )
+./windows.go:110:2: syntax error: unexpected keyword return at end of statement
