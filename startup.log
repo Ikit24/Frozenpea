@@ -2336,3 +2336,11 @@ exit status 2
 # github.com/Ikit24/frozenpea
 ./windows.go:109:52: syntax error: unexpected newline in argument list; possibly missing comma or )
 ./windows.go:110:2: syntax error: unexpected keyword return at end of statement
+# github.com/Ikit24/frozenpea
+./windows.go:32:10: undefined: createBoldLabel
+# github.com/Ikit24/frozenpea
+./windows.go:32:10: undefined: createBoldLabel
+# github.com/Ikit24/frozenpea
+./windows.go:32:10: undefined: createBoldLabel
+# github.com/Ikit24/frozenpea
+./windows.go:32:10: undefined: createBoldLabel

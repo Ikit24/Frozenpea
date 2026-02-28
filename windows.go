@@ -25,14 +25,6 @@ type SoundConfig struct {
 
 var soundConfig SoundConfig
 
-
-
-func createCheckBox(label string, onChange func(bool)) *fyne.Container {
-	check := widget.NewCheck("", onChange)
-	text := createBoldLabel(label)
-	return container.NewHBox(check, text)
-}
-
 func showBreakWindow(a fyne.App) fyne.Window {
 	var w fyne.Window
 	fyne.DoAndWait(func() {
@@ -105,7 +97,7 @@ func showNotification(a fyne.App) fyne.Window {
 	return n
 }
 
-func createSoundCheckbox(label string, configField *bool) *fyne.Container {
+func createSoundCheckBox(label string, configField *bool) *fyne.Container {
 	check := widget.NewCheck("", func(checked bool) {
 	*configField = checked
 	})
@@ -130,30 +122,10 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 
 		form := widget.NewForm(workDur, breakDur)
 
-		notifyBox := createCheckBox("Notification sound", func(checked bool) {
-			soundConfig.NotificationSound = checked
-		})
-
-		notifyBeforeBreak := widget.NewCheck("", func(checked bool) {
-			soundConfig.BeforeBreakSound  = checked
-		})
-		beforeBreakText := canvas.NewText("Before break start notification", color.NRGBA{R: 255, G: 255, B: 255, A: 255})
-		beforeBreakText.TextStyle = fyne.TextStyle{Bold: true}
-		beforeBreakBox := container.NewHBox(notifyBeforeBreak, beforeBreakText)
-
-		notifyStartBreak := widget.NewCheck("", func(checked bool) {
-			soundConfig.BreakStartSound   = checked
-		})
-		startBreakText := canvas.NewText("Break start notification", color.NRGBA{R: 255, G: 255, B: 255, A: 255})
-		startBreakText.TextStyle = fyne.TextStyle{Bold: true}
-		breakStartBox := container.NewHBox(notifyStartBreak, startBreakText)
-
-		notifyEndBreak := widget.NewCheck("", func(checked bool) {
-				soundConfig.BreakEndSound     = checked
-		})
-		endBreakText := canvas.NewText("End of break notification", color.NRGBA{R: 255, G: 255, B: 255, A: 255})
-		endBreakText.TextStyle = fyne.TextStyle{Bold: true}
-		endBreakBox := container.NewHBox(notifyEndBreak, endBreakText)
+		notifyBox := createSoundCheckBox("Notification sound", &soundConfig.NotificationSound)
+		notifyBeforeBreak := createSoundCheckBox("Before break start notification", &soundConfig.BeforeBreakSound)
+		notifyStartBreak := createSoundCheckBox("Break start notification", &soundConfig.BreakStartSound)
+		notifyEndBreak := createSoundCheckBox("End of break notification", &soundConfig.BreakEndSound)
 
 		confirmButton := widget.NewButton("Confirm changes", func() {
 			_, err := strconv.Atoi(workEntry.Text)
@@ -183,8 +155,8 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 
 			formContent := container.NewVBox(
 			form, notifyBox,
-			beforeBreakBox, breakStartBox,
-			endBreakBox, confirmButton, cancelSess,
+			notifyBeforeBreak, notifyStartBreak,
+			notifyEndBreak, confirmButton, cancelSess,
 			)
 			content := container.NewStack(img, container.NewCenter(formContent))
 
