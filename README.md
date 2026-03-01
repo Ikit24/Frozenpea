@@ -7,6 +7,7 @@ A productivity app which locks the user out from the machine after a set of minu
 - Notification sound upon startup and before break starts
 - Automatic screen lock after the set amount of minutes
 - Background window display during rest periods
+- Customizable notifications on startup
 - Helps prevent repetitive strain injuries (RSI)
 - Promotes healthier work habits
 
