@@ -11,6 +11,7 @@ import (
 	"fyne.io/fyne/v2/driver"
 	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/dialog"
+	"fyne.io/fyne/v2/theme"
 
 	"github.com/BurntSushi/xgb"
 	"github.com/BurntSushi/xgb/xproto"
@@ -123,6 +124,9 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 		form := widget.NewForm(workDur, breakDur)
 
 		notifyBox := createSoundCheckBox("Notification sound", &soundConfig.NotificationSound)
+		playNotifySample := widget.NewButtonWithIcon("Notification sample", theme.MediaPlayIcon(), func() {})
+		playNotifySample.Resize(fyne.NewSize(10,10))
+
 		notifyBeforeBreak := createSoundCheckBox("Before break start notification", &soundConfig.BeforeBreakSound)
 		notifyStartBreak := createSoundCheckBox("Break start notification", &soundConfig.BreakStartSound)
 		notifyEndBreak := createSoundCheckBox("End of break notification", &soundConfig.BreakEndSound)
@@ -155,6 +159,7 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 
 			formContent := container.NewVBox(
 			form, notifyBox,
+			playNotifySample,
 			notifyBeforeBreak, notifyStartBreak,
 			notifyEndBreak, confirmButton, cancelSess,
 			)
