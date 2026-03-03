@@ -124,8 +124,9 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 		form := widget.NewForm(workDur, breakDur)
 
 		notifyBox := createSoundCheckBox("Notification sound", &soundConfig.NotificationSound)
-		playNotifySample := widget.NewButtonWithIcon("Notification sample", theme.MediaPlayIcon(), func() {})
-		playNotifySample.Resize(fyne.NewSize(10,10))
+		playNotifySample := widget.NewButtonWithIcon("", theme.MediaPlayIcon(), func() {})
+		notifyWithButton := container.NewHBox(notifyBox, playNotifySample)
+		playNotifySample.Resize(fyne.NewSize(10, 10))
 
 		notifyBeforeBreak := createSoundCheckBox("Before break start notification", &soundConfig.BeforeBreakSound)
 		notifyStartBreak := createSoundCheckBox("Break start notification", &soundConfig.BreakStartSound)
@@ -158,8 +159,7 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 			img.FillMode = canvas.ImageFillStretch
 
 			formContent := container.NewVBox(
-			form, notifyBox,
-			playNotifySample,
+			form, notifyWithButton,
 			notifyBeforeBreak, notifyStartBreak,
 			notifyEndBreak, confirmButton, cancelSess,
 			)
