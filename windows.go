@@ -123,15 +123,18 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 
 		form := widget.NewForm(workDur, breakDur)
 
-		notifyBox := createSoundCheckBox("Notification sound", &soundConfig.NotificationSound)
+		notifyBox := createSoundCheckBox("Notification sound sample 	", &soundConfig.NotificationSound)
 		playNotifySample := widget.NewButtonWithIcon("", theme.MediaPlayIcon(), func() {})
 		notifyWithButton := container.NewHBox(notifyBox, playNotifySample)
 
-		notifyBeforeBreak := createSoundCheckBox("Before break start notification", &soundConfig.BeforeBreakSound)
+		notifyBeforeBreak := createSoundCheckBox("Before break start sample 	", &soundConfig.BeforeBreakSound)
 		playBeforeBreakSample := widget.NewButtonWithIcon("", theme.MediaPlayIcon(), func() {})
 		beforeBreakWithButton := container.NewHBox(notifyBeforeBreak, playBeforeBreakSample)
 
-		notifyStartBreak := createSoundCheckBox("Break start notification", &soundConfig.BreakStartSound)
+		notifyStartBreak := createSoundCheckBox("Break start sample 		", &soundConfig.BreakStartSound)
+		playStartBreakSample := widget.NewButtonWithIcon("", theme.MediaPlayIcon(), func() {})
+		startBreakWithButton := container.NewHBox(notifyStartBreak, playStartBreakSample)
+
 		notifyEndBreak := createSoundCheckBox("End of break notification", &soundConfig.BreakEndSound)
 
 		confirmButton := widget.NewButton("Confirm changes", func() {
@@ -162,7 +165,7 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 
 			formContent := container.NewVBox(
 			form, notifyWithButton,
-			beforeBreakWithButton, notifyStartBreak,
+			beforeBreakWithButton, startBreakWithButton,
 			notifyEndBreak, confirmButton, cancelSess,
 			)
 			content := container.NewStack(img, container.NewCenter(formContent))
