@@ -123,19 +123,19 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 
 		form := widget.NewForm(workDur, breakDur)
 
-		notifyBox := createSoundCheckBox("Notification sound sample 	", &soundConfig.NotificationSound)
+		notifyBox := createSoundCheckBox("Notification sound", &soundConfig.NotificationSound)
 		playNotifySample := widget.NewButtonWithIcon("", theme.MediaPlayIcon(), func() {})
 		notifyWithButton := container.NewHBox(notifyBox, playNotifySample)
 
-		notifyBeforeBreak := createSoundCheckBox("Before break start sample 	", &soundConfig.BeforeBreakSound)
+		notifyBeforeBreak := createSoundCheckBox("Before break start ", &soundConfig.BeforeBreakSound)
 		playBeforeBreakSample := widget.NewButtonWithIcon("", theme.MediaPlayIcon(), func() {})
 		beforeBreakWithButton := container.NewHBox(notifyBeforeBreak, playBeforeBreakSample)
 
-		notifyStartBreak := createSoundCheckBox("Break start sample 		", &soundConfig.BreakStartSound)
+		notifyStartBreak := createSoundCheckBox("Break start 	   ", &soundConfig.BreakStartSound)
 		playStartBreakSample := widget.NewButtonWithIcon("", theme.MediaPlayIcon(), func() {})
 		startBreakWithButton := container.NewHBox(notifyStartBreak, playStartBreakSample)
 
-		notifyEndBreak := createSoundCheckBox("End of break notification", &soundConfig.BreakEndSound)
+		notifyEndBreak := createSoundCheckBox("End of break", &soundConfig.BreakEndSound)
 
 		confirmButton := widget.NewButton("Confirm changes", func() {
 			_, err := strconv.Atoi(workEntry.Text)
