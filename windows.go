@@ -19,7 +19,7 @@ import (
 
 type SoundConfig struct {
 	NotificationSound bool
-	BeforeBreakSound  bool
+	BreakReminder     bool
 	BreakStartSound   bool
 	BreakEndSound     bool
 }
@@ -123,20 +123,16 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 
 		form := widget.NewForm(workDur, breakDur)
 
-		notifyBox := createSoundCheckBox("Startup sound     ", &soundConfig.NotificationSound)
-		playNotifySample := widget.NewButtonWithIcon("", theme.MediaPlayIcon(), func() {})
-		notifyWithButton := container.NewHBox(notifyBox, playNotifySample)
-
-		notifyBeforeBreak := createSoundCheckBox("Break reminder  ", &soundConfig.BeforeBreakSound)
-		playBeforeBreakSample := widget.NewButtonWithIcon("", theme.MediaPlayIcon(), func() {})
-		beforeBreakWithButton := container.NewHBox(notifyBeforeBreak, playBeforeBreakSample)
+		notifyBreakReminder := createSoundCheckBox("Break reminder  ", &soundConfig.BreakReminder)
+		playBreakReminderSample := widget.NewButtonWithIcon("", theme.MediaPlayIcon(), func() {playSound("./assets/before_break.mp3")})
+		beforeBreakReminder := container.NewHBox(notifyBreakReminder, playBreakReminderSample)
 
 		notifyStartBreak := createSoundCheckBox("Break starting    ", &soundConfig.BreakStartSound)
-		playStartBreakSample := widget.NewButtonWithIcon("", theme.MediaPlayIcon(), func() {})
+		playStartBreakSample := widget.NewButtonWithIcon("", theme.MediaPlayIcon(), func() {playSound("./assets/break_start.mp3")})
 		startBreakWithButton := container.NewHBox(notifyStartBreak, playStartBreakSample)
 
 		notifyEndBreak := createSoundCheckBox("Break ending      ", &soundConfig.BreakEndSound)
-		playEndBreakSample := widget.NewButtonWithIcon("", theme.MediaPlayIcon(), func() {})
+		playEndBreakSample := widget.NewButtonWithIcon("", theme.MediaPlayIcon(), func() {playSound("./assets/break_end.mp3")})
 		endBreakButton := container.NewHBox(notifyEndBreak, playEndBreakSample)
 
 		confirmButton := widget.NewButton("Confirm changes", func() {
@@ -166,9 +162,9 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 			img.FillMode = canvas.ImageFillStretch
 
 			formContent := container.NewVBox(
-			form, notifyWithButton,
-			beforeBreakWithButton, startBreakWithButton,
-			endBreakButton, confirmButton, cancelSess,
+			form,beforeBreakReminder,
+			startBreakWithButton, endBreakButton,
+			confirmButton, cancelSess,
 			)
 			content := container.NewStack(img, container.NewCenter(formContent))
 

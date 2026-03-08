@@ -99,7 +99,7 @@ func main () {
 				case <- time.After(workDur - 1 * time.Minute):
 					//Break in 1 min
 					n = showNotification(a)
-					if soundConfig.BeforeBreakSound {
+					if soundConfig.BreakReminder {
 						playSound("./assets/before_break.mp3")
 					}
 				case <- done:
