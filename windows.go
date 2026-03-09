@@ -18,10 +18,10 @@ import (
 )
 
 type SoundConfig struct {
-	NotificationSound bool
-	BreakReminder     bool
-	BreakStartSound   bool
-	BreakEndSound     bool
+	NotificationSound    bool
+	BreakReminder        bool
+	BreakStartingSound   bool
+	BreakOverSound       bool
 }
 
 var soundConfig SoundConfig
@@ -127,13 +127,13 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 		playBreakReminderSample := widget.NewButtonWithIcon("", theme.MediaPlayIcon(), func() {playSound("./assets/before_break.mp3")})
 		beforeBreakReminder := container.NewHBox(notifyBreakReminder, playBreakReminderSample)
 
-		notifyStartBreak := createSoundCheckBox("Break starting    ", &soundConfig.BreakStartSound)
-		playStartBreakSample := widget.NewButtonWithIcon("", theme.MediaPlayIcon(), func() {playSound("./assets/break_start.mp3")})
-		startBreakWithButton := container.NewHBox(notifyStartBreak, playStartBreakSample)
+		notifyBreakStarting := createSoundCheckBox("Break starting    ", &soundConfig.BreakStartingSound)
+		playBreakStartingSample := widget.NewButtonWithIcon("", theme.MediaPlayIcon(), func() {playSound("./assets/break_start.mp3")})
+		breakStartingButton := container.NewHBox(notifyBreakStarting, playBreakStartingSample)
 
-		notifyEndBreak := createSoundCheckBox("Break ending      ", &soundConfig.BreakEndSound)
-		playEndBreakSample := widget.NewButtonWithIcon("", theme.MediaPlayIcon(), func() {playSound("./assets/break_end.mp3")})
-		endBreakButton := container.NewHBox(notifyEndBreak, playEndBreakSample)
+		notifyBreakOver := createSoundCheckBox("Break ending      ", &soundConfig.BreakOverSound)
+		playBreakOverSample := widget.NewButtonWithIcon("", theme.MediaPlayIcon(), func() {playSound("./assets/break_end.mp3")})
+		breakOverButton := container.NewHBox(notifyBreakOver, playBreakOverSample)
 
 		confirmButton := widget.NewButton("Confirm changes", func() {
 			_, err := strconv.Atoi(workEntry.Text)
@@ -163,7 +163,7 @@ func startupWindow(a fyne.App, setupDone chan bool) {
 
 			formContent := container.NewVBox(
 			form,beforeBreakReminder,
-			startBreakWithButton, endBreakButton,
+			breakStartingButton, breakOverButton,
 			confirmButton, cancelSess,
 			)
 			content := container.NewStack(img, container.NewCenter(formContent))

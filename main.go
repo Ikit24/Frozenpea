@@ -86,7 +86,7 @@ func main () {
 					fyne.Do(func() {
 					w.Close()
 					})
-					if soundConfig.BreakEndSound {
+					if soundConfig.BreakOverSound {
 						playSound("./assets/break_end.mp3")
 					}
 				case <- done:
@@ -110,7 +110,7 @@ func main () {
 					//Break start
 					fyne.Do(func() { n.Close() })
 					w = showBreakWindow(a)
-					if soundConfig.BreakStartSound {
+					if soundConfig.BreakStartingSound {
 						playSound("./assets/break_start.mp3")
 					}
 				case <- done:
