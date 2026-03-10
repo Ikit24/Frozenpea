@@ -18,7 +18,6 @@ import (
 )
 
 type SoundConfig struct {
-	NotificationSound    bool
 	BreakReminder        bool
 	BreakStartingSound   bool
 	BreakOverSound       bool
