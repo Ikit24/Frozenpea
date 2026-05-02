@@ -16,9 +16,6 @@ A productivity app which locks the user out from the machine after a set of minu
 ## System Requirements
 - Linux with X11 display server
 - Go 1.21 or higher
-- Pop!_OS, Ubuntu, Debian, Fedora (X11 session), or other X11-based distributions
-
-**Note:** Wayland is not currently supported. Ensure you're running an X11 session.
 
 ## Prerequisites
 
@@ -52,7 +49,7 @@ A productivity app which locks the user out from the machine after a set of minu
 On startup you will have the option to set break and workduration.
 The "Cancel session" button will stop the program completely.
 Once the settings are confirmed the application starts, you will be notified when the break is about to happen.
-After break starts you cannot interact with your machine.
+After break starts you cannot interact with the OS.
 
 ## Automatic Startup Configuration (Linux)
 

@@ -3068,3 +3068,2384 @@ exit status 2
 Got X11 context, window: 4194361
 XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
 XGB: conn.go:48: Trying connection without authority info...
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+panic: close of closed channel
+
+goroutine 86 [running]:
+github.com/BurntSushi/xgb.(*Conn).Close(...)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:140
+github.com/BurntSushi/xgb.(*Conn).readResponses(0xc001f30160)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:405 +0x246
+created by github.com/BurntSushi/xgb.postNewConn in goroutine 1
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:133 +0x2b6
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/03/12 21:14:58 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc00011c018?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc0002bdd20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc0000f6210, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc00012a000)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc0000f6210, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0000e6310?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+X connection to :1 broken (explicit kill or server shutdown).
+exit status 1
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/03/13 19:13:01 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc00014a630?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc0001bdd20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc000414000, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0003e7290)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc000414000, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc000416150?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/03/14 06:49:27 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc0002100f0?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc0002c5d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc0000f4210, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc00011ab40)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc0000f4210, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0000ce3f0?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+Got X11 context, window: 4194364
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+Got X11 context, window: 4194387
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+Got X11 context, window: 4194410
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+Got X11 context, window: 4194433
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+Got X11 context, window: 4194456
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+Got X11 context, window: 4194479
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+panic: close of closed channel
+
+goroutine 67 [running]:
+github.com/BurntSushi/xgb.(*Conn).Close(...)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:140
+github.com/BurntSushi/xgb.(*Conn).readResponses(0xc000d8f1e0)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:405 +0x246
+created by github.com/BurntSushi/xgb.postNewConn in goroutine 1
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:133 +0x2b6
+panic: close of closed channel
+
+goroutine 27 [running]:
+github.com/BurntSushi/xgb.(*Conn).Close(...)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:140
+github.com/BurntSushi/xgb.(*Conn).readResponses(0xc000d8f340)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:405 +0x246
+created by github.com/BurntSushi/xgb.postNewConn in goroutine 1
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:133 +0x2b6
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/03/14 17:23:46 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000012648?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc00018dd20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc00025e000, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc00033b0b0)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc00025e000, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0002558f0?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/03/15 08:38:12 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc0001305e8?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc00021fd20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc0003f8000, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc00034f1a0)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc0003f8000, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc000398230?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+Got X11 context, window: 4194361
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+Got X11 context, window: 4194384
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+panic: close of closed channel
+
+goroutine 101 [running]:
+github.com/BurntSushi/xgb.(*Conn).Close(...)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:140
+github.com/BurntSushi/xgb.(*Conn).readResponses(0xc001d5e2c0)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:405 +0x246
+created by github.com/BurntSushi/xgb.postNewConn in goroutine 1
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:133 +0x2b6
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/03/16 20:45:19 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc0002a25a0?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000161d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc0000fa000, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0003aaf30)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc0000fa000, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0000fc150?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+Got X11 context, window: 4194361
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:367: A write error is unrecoverable: write unix @->/tmp/.X11-unix/X1: write: broken pipe
+panic: close of closed channel
+
+goroutine 28 [running]:
+github.com/BurntSushi/xgb.(*Conn).Close(...)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:140
+github.com/BurntSushi/xgb.(*Conn).readResponses(0xc00369c000)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:405 +0x246
+created by github.com/BurntSushi/xgb.postNewConn in goroutine 1
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:133 +0x2b6
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/03/17 19:27:01 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc00015a018?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc00020bd20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc000326840, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc00011a150)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc000326840, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0002345b0?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/03/18 19:23:59 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000012030?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000207d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc000322840, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0000c4180)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc000322840, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00022e690?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/03/19 19:32:38 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc0000120c0?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc00016dd20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc000352000, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0000c4660)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc000352000, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00032a380?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/03/20 19:04:55 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc00018e600?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc00022dd20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc0003c7d90, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0002f32c0)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc0003c7d90, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0001483f0?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+X connection to :1 broken (explicit kill or server shutdown).
+exit status 1
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/03/21 06:56:08 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc0001900c0?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000263d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc0000f2210, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc00011a810)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc0000f2210, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0000cc310?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+Got X11 context, window: 4194361
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+Got X11 context, window: 4194384
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+panic: close of closed channel
+
+goroutine 46 [running]:
+github.com/BurntSushi/xgb.(*Conn).Close(...)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:140
+github.com/BurntSushi/xgb.(*Conn).readResponses(0xc0038fe210)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:405 +0x246
+created by github.com/BurntSushi/xgb.postNewConn in goroutine 1
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:133 +0x2b6
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/03/22 08:39:37 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc0000120d8?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000267d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc0001ee000, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0000c4c30)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc0001ee000, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0001941c0?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+Got X11 context, window: 4194364
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+panic: close of closed channel
+
+goroutine 29 [running]:
+github.com/BurntSushi/xgb.(*Conn).Close(...)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:140
+github.com/BurntSushi/xgb.(*Conn).readResponses(0xc00345a160)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:405 +0x246
+created by github.com/BurntSushi/xgb.postNewConn in goroutine 1
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:133 +0x2b6
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/03/23 21:53:54 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc00017e0f0?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc0001cbd20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc00041c630, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0001109f0)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc00041c630, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00042e230?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/03/24 19:37:49 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000126060?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc0001d3d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc000492000, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0001107e0)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc000492000, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc000120230?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/03/25 19:13:11 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc0001a0648?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000227d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc0000f6210, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc000357080)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc0000f6210, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0000e6310?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/03/26 20:19:22 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000512018?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000245d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc000488000, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc000518000)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc000488000, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0002783f0?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/03/27 19:41:04 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc0001d6120?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc0002afd20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc000150210, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0003940f0)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc000150210, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0002e4540?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/03/28 06:52:14 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc0001e8600?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000257d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc00015a210, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc000181cb0)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc00015a210, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00012c310?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+Got X11 context, window: 4194364
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+Got X11 context, window: 4194387
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+panic: close of closed channel
+
+goroutine 101 [running]:
+github.com/BurntSushi/xgb.(*Conn).Close(...)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:140
+github.com/BurntSushi/xgb.(*Conn).readResponses(0xc000d009a0)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:405 +0x246
+created by github.com/BurntSushi/xgb.postNewConn in goroutine 1
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:133 +0x2b6
+panic: close of closed channel
+
+goroutine 117 [running]:
+github.com/BurntSushi/xgb.(*Conn).Close(...)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:140
+github.com/BurntSushi/xgb.(*Conn).readResponses(0xc000d00b00)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:405 +0x246
+created by github.com/BurntSushi/xgb.postNewConn in goroutine 1
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:133 +0x2b6
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/03/29 08:01:40 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000012120?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc00029dd20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc00025c000, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0000c4cc0)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc00025c000, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0002141c0?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+Got X11 context, window: 4194364
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+panic: close of closed channel
+
+goroutine 98 [running]:
+github.com/BurntSushi/xgb.(*Conn).Close(...)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:140
+github.com/BurntSushi/xgb.(*Conn).readResponses(0xc000336840)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:405 +0x246
+created by github.com/BurntSushi/xgb.postNewConn in goroutine 1
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:133 +0x2b6
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/03/30 22:28:31 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000012138?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc00025fd20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc000490000, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0003b41e0)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc000490000, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc000496150?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/03/31 19:49:19 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc00023c5e8?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000277d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc0000f6210, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0003b7410)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc0000f6210, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0000e6380?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/01 18:42:14 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000012690?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc0001cbd20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc000278000, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc000369aa0)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc000278000, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00026c1c0?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/02 20:13:10 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000012168?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000217d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc000350840, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0000c4ea0)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc000350840, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00024e620?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/03 19:59:21 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc00013c018?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc0001cfd20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc0003fc840, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc000142000)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc0003fc840, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc000306e70?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/04 06:51:49 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000130138?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000227d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc000364630, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc000112810)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc000364630, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00025c460?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+Got X11 context, window: 4194361
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:367: A write error is unrecoverable: write unix @->/tmp/.X11-unix/X1: write: broken pipe
+panic: close of closed channel
+
+goroutine 41 [running]:
+github.com/BurntSushi/xgb.(*Conn).Close(...)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:140
+github.com/BurntSushi/xgb.(*Conn).readResponses(0xc00368e000)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:405 +0x246
+created by github.com/BurntSushi/xgb.postNewConn in goroutine 1
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:133 +0x2b6
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/05 10:02:24 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc0003c4060?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc00020bd20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc000488000, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0003b0d80)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc000488000, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00048a150?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+Got X11 context, window: 4194364
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:367: A write error is unrecoverable: write unix @->/tmp/.X11-unix/X1: write: broken pipe
+panic: close of closed channel
+
+goroutine 16 [running]:
+github.com/BurntSushi/xgb.(*Conn).Close(...)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:140
+github.com/BurntSushi/xgb.(*Conn).readResponses(0xc000e3fa20)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:405 +0x246
+created by github.com/BurntSushi/xgb.postNewConn in goroutine 1
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:133 +0x2b6
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/06 11:04:39 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000120180?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000245d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc000404580, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc00011ef30)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc000404580, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc000418230?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/07 23:02:28 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000492018?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000267d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc0003b2630, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc000498000)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc0003b2630, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00019e310?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/08 19:51:10 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000286570?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc0002dfd20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc000418630, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc000289770)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc000418630, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0002022a0?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/09 20:31:08 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000214660?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc0002a1d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc0000d8210, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0003d14a0)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc0000d8210, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0001a6230?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/10 19:37:02 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc0000121b0?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc00011bd20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc0000f6210, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0000c53b0)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc0000f6210, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00020bab0?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/11 08:26:03 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc00021e618?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000267d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc0003b4630, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0003aba10)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc0003b4630, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0002a6460?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+Got X11 context, window: 4194361
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+Got X11 context, window: 4194384
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+Got X11 context, window: 4194407
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+X connection to :1 broken (explicit kill or server shutdown).
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+panic: close of closed channel
+
+goroutine 25 [running]:
+github.com/BurntSushi/xgb.(*Conn).Close(...)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:140
+github.com/BurntSushi/xgb.(*Conn).readResponses(0xc001a9e160)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:405 +0x246
+created by github.com/BurntSushi/xgb.postNewConn in goroutine 1
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:133 +0x2b6
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/12 13:44:23 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000142018?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000287d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc0003d8840, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc000134030)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc0003d8840, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0001eeb60?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+Got X11 context, window: 4194361
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+X connection to :1 broken (explicit kill or server shutdown).
+panic: close of closed channel
+
+goroutine 55 [running]:
+github.com/BurntSushi/xgb.(*Conn).Close(...)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:140
+github.com/BurntSushi/xgb.(*Conn).readResponses(0xc0001462c0)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:405 +0x246
+created by github.com/BurntSushi/xgb.postNewConn in goroutine 1
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:133 +0x2b6
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/13 22:32:59 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc0001a0720?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc00027fd20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc000132000, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0003d2270)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc000132000, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc000138150?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+X connection to :1 broken (explicit kill or server shutdown).
+exit status 1
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/14 19:37:07 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc0001e80c0?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000217d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc000356630, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0001827e0)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc000356630, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00024c460?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/15 19:47:14 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc00023a060?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc00027fd20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc0003d4630, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0002008d0)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc0003d4630, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0001d8d20?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/16 20:32:55 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc00048e018?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc0001edd20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc00015a210, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc000494000)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc00015a210, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00012c310?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/17 19:48:22 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc0000120d8?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000287d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc0000f6210, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0000c48a0)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc0000f6210, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0000e6310?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/18 06:25:27 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc00012e150?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000221d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc00015a210, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc000110a50)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc00015a210, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00012c380?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+Got X11 context, window: 4194361
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+Got X11 context, window: 4194384
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+panic: close of closed channel
+
+goroutine 115 [running]:
+github.com/BurntSushi/xgb.(*Conn).Close(...)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:140
+github.com/BurntSushi/xgb.(*Conn).readResponses(0xc001210000)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:405 +0x246
+created by github.com/BurntSushi/xgb.postNewConn in goroutine 1
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:133 +0x2b6
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/19 20:48:21 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc0000120d8?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000221d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc0003e0630, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0000baae0)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc0003e0630, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc000260d20?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/20 22:59:33 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000012060?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000251d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc00015a210, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0000c4780)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc00015a210, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00012c380?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/21 20:19:41 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000386060?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc0001edd20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc00015c210, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0003881e0)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc00015c210, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00012e310?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/22 19:39:12 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc0000120c0?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc00016dd20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc0002e0000, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0000c4660)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc0002e0000, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00026c2a0?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/23 18:11:49 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc0000120c0?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc0002e7d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc00023e000, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0000ba540)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc00023e000, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0002141c0?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+Got X11 context, window: 4194364
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:367: A write error is unrecoverable: write unix @->/tmp/.X11-unix/X1: write: broken pipe
+panic: close of closed channel
+
+goroutine 71 [running]:
+github.com/BurntSushi/xgb.(*Conn).Close(...)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:140
+github.com/BurntSushi/xgb.(*Conn).readResponses(0xc000bfa160)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:405 +0x246
+created by github.com/BurntSushi/xgb.postNewConn in goroutine 1
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:133 +0x2b6
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/24 19:32:29 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000012648?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc0001a7d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc000150210, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc000352ff0)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc000150210, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00011a310?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/25 08:58:36 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc00012e1b0?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000245d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc00015a210, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc000111590)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc00015a210, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00012c380?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+Got X11 context, window: 4194364
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+Got X11 context, window: 4194387
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+panic: close of closed channel
+
+goroutine 40 [running]:
+github.com/BurntSushi/xgb.(*Conn).Close(...)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:140
+github.com/BurntSushi/xgb.(*Conn).readResponses(0xc000336840)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:405 +0x246
+created by github.com/BurntSushi/xgb.postNewConn in goroutine 1
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:133 +0x2b6
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/26 09:57:19 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000150060?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc0001d3d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc0002b2000, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc000117920)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc0002b2000, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0002581c0?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+Got X11 context, window: 4194361
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:367: A write error is unrecoverable: write unix @->/tmp/.X11-unix/X1: write: broken pipe
+panic: close of closed channel
+
+goroutine 101 [running]:
+github.com/BurntSushi/xgb.(*Conn).Close(...)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:140
+github.com/BurntSushi/xgb.(*Conn).readResponses(0xc00041c160)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:405 +0x246
+created by github.com/BurntSushi/xgb.postNewConn in goroutine 1
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:133 +0x2b6
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/27 23:06:16 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000130168?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000219d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc00015c210, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc000112b70)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc00015c210, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00012e380?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/28 18:06:47 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000012198?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000155d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc00032a630, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc0000c5080)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc00032a630, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc000216380?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/29 20:05:20 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000422018?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc0001f5d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc0003b6000, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc000428000)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc0003b6000, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0003b8150?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/30 20:11:27 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc00048e018?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000251d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc00015a210, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc000494000)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc00015a210, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00012c380?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/04/30 20:13:21 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000210588?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000263d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc00015a210, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc000203c20)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc00015a210, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00012c310?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/05/01 10:56:26 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000012288?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000239d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc000320630, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc000326750)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc000320630, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc0001a2310?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
+Got X11 context, window: 4194361
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+Got X11 context, window: 4194384
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+XGB: xgb.go:403: A read error is unrecoverable: EOF
+panic: close of closed channel
+
+goroutine 42 [running]:
+github.com/BurntSushi/xgb.(*Conn).Close(...)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:140
+github.com/BurntSushi/xgb.(*Conn).readResponses(0xc000b90210)
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:405 +0x246
+created by github.com/BurntSushi/xgb.postNewConn in goroutine 1
+	/home/ati/go/pkg/mod/github.com/!burnt!sushi/xgb@v0.0.0-20210121224620-deaf085860bc/xgb.go:133 +0x2b6
+exit status 2
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib pcm_oss.c:397:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection refused
+
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+ALSA lib confmisc.c:165:(snd_config_get_card) Cannot get card index for 0
+2026/05/02 09:06:57 PlatformError: X11: The DISPLAY environment variable is missing
+panic: NotInitialized: The GLFW library is not initialized
+
+goroutine 1 [running, locked to thread]:
+github.com/go-gl/glfw/v3.3/glfw.acceptError({0x0, 0x0, 0xc000120180?})
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:177 +0x16f
+github.com/go-gl/glfw/v3.3/glfw.panicError(...)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/error.go:188
+github.com/go-gl/glfw/v3.3/glfw.CreateStandardCursor(0xc000245d20?)
+	/home/ati/go/pkg/mod/github.com/go-gl/glfw/v3.3/glfw@v0.0.0-20240506104042-037f3cc74f2a/input.go:512 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.initCursors()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window_desktop.go:56 +0x1c
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).initGLFW(0x0?)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/loop_desktop.go:18 +0x3a
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).init(...)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/driver.go:45
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).createWindow(0xc00043a000, {0x0?, 0x6e5aec?}, 0x1)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:940 +0x55
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow.func1()
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:901 +0x2d
+fyne.io/fyne/v2/internal/async.EnsureMain(0xc00011ef30)
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/async/goroutine.go:46 +0x3f
+fyne.io/fyne/v2/internal/driver/glfw.(*gLDriver).CreateWindow(0xc00043a000, {0x0, 0x0})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/internal/driver/glfw/window.go:900 +0x9b
+fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00043c150?, {0x0?, 0x2?})
+	/home/ati/go/pkg/mod/fyne.io/fyne/v2@v2.7.1/app/app.go:67 +0x22
+main.main()
+	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
+exit status 2
