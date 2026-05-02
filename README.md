@@ -14,7 +14,7 @@ A productivity app which locks the user out from the machine after a set of minu
 - Promotes healthier work habits
 
 ## System Requirements
-- Linux with X11 display server
+- Linux with X11 display server, also works on Wayland
 - Go 1.21 or higher
 
 ## Prerequisites

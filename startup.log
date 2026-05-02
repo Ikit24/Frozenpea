@@ -5449,3 +5449,6 @@ fyne.io/fyne/v2/app.(*fyneApp).NewWindow(0xc00043c150?, {0x0?, 0x2?})
 main.main()
 	/home/ati/projects/code/FrozenPea/main.go:123 +0x149
 exit status 2
+Got X11 context, window: 4194361
+XGB: conn.go:47: Could not get authority info: open /home/ati/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
